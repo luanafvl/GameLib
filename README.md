@@ -10,7 +10,7 @@ The goal of the project is to create a modern UI inspired by game storefronts an
 
 ## Features
 
-* 📱 Fully responsive layout
+* 📱 Responsive layout
 * 🎮 Game showcase cards with hover effects
 * 🧭 Smooth navigation between sections
 * 🌌 Modern gaming UI design
