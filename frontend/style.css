@@ -1,0 +1,233 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#05080c;
+    color:white;
+    font-family:'Alumni Sans', sans-serif;
+}
+
+/* HEADER */
+
+.header{
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+    padding:20px 80px;
+    background-color: #0f12148a;
+}
+
+.nav{
+    display:flex;
+    gap:3vw;
+}
+
+.nav a{
+    text-decoration:none;
+    color:white;
+    font-size:clamp(18px,1.5vw,40px);
+    transition:0.3s;
+}
+
+.nav a:hover{
+    color:#f5b321;
+}
+
+/* SECTIONS */
+
+section{
+    min-height:100vh;
+    width:100%;
+    padding:120px 10%;
+}
+
+/* HERO */
+
+.section-1{
+    background:
+    linear-gradient(to bottom, rgba(5,8,12,0.2), rgba(5,8,12,1)),
+    url("images/bloodborne.jpg");
+
+    box-shadow: 
+        inset -270px -161px 150px 0px #0f1214, 
+        inset 1px 290px 200px 0px #0f1214, 
+        inset 565px 22px 150px 0px rgba(0,0,0,0.6);
+
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    box-shadow: -270px -161px 150px -68px #0F1214 inset, 1px 290px 200px 0 #0F1214 inset, 565px 22px 150px 129px rgba(0, 0, 0, 0.60) inset;
+}
+
+.hero-content h1{
+    font-family:'Zen Dots', sans-serif;
+    font-size:clamp(60px,8vw,120px);
+    letter-spacing:4px;
+}
+
+.hero-content p{
+    font-size:clamp(22px,4vw,45px);
+    margin-top:10px;
+}
+
+.hero-content span{
+    color:#f5b321;
+}
+
+/* SECTION 2 */
+
+.section-2{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    gap:60px;
+    box-shadow: 
+        inset 0px 200px 300px 0px #0f1214,
+        inset 0px -200px 150px 0px #0f1214; 
+}
+
+/* GAME CARDS */
+
+.game-examples{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:40px;
+}
+
+.game-examples div{
+    position:relative;
+    overflow:hidden;
+    border-radius:14px;
+    cursor:pointer;
+}
+
+.game-examples img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:14px;
+    transition:0.4s;
+}
+
+.game-examples div:hover img{
+    transform:scale(1.1);
+    filter:brightness(1.2);
+}
+
+.game-examples h2{
+    position:absolute;
+    bottom:10px;
+    left:15px;
+    font-size:clamp(16px,1.3vw,22px);
+    font-weight:600;
+}
+
+/* WEBSITE GOALS */
+
+.website-goals{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    text-align:center;
+    gap:20px;
+}
+
+.website-goals p{
+    font-family:'Alumni Sans', sans-serif;
+    color:#f5b321;
+    font-size:clamp(18px,2vw,60px);
+    letter-spacing:2px;
+    margin-top: 4vw;
+}
+
+/* SECTION 3 */
+
+.section-3{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background:#1A2023;
+    min-height:100vh;
+
+    box-shadow: 
+        inset 0px 290px 200px 0px #0f1214;
+}
+
+.section-3 h2{
+    font-family:'Zen Dots', sans-serif;
+    font-size:clamp(40px,4vw,70px);
+    margin-bottom:60px;
+}
+
+.section-3 span{
+    color:#f5b321;
+}
+
+/* PLATFORMS */
+
+.platform-container {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    gap:6vw;
+}
+
+.platform-container img{
+    height:50px;
+    opacity:0.8;
+    transition:0.3s;
+}
+
+.platform-container img:hover{
+    opacity:1;
+    transform:scale(1.1);
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:3vh;
+    background:#1A2023;
+    box-shadow: 
+        inset 0px -20px 25px 15px #000000c9; 
+    font-size:clamp(10px,2vw,22px);
+}
+
+/* RESPONSIVE */
+
+@media (max-width:900px){
+
+.hero-content{
+    text-align:center;
+}
+
+.nav{
+    justify-content:center;
+}
+
+.section-1{
+    justify-content:center;
+}
+
+.website-goals{
+    grid-template-columns:1fr;
+}
+
+.platforms{
+    gap:40px;
+}
+
+}
